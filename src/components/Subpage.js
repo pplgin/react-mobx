@@ -3,7 +3,7 @@ import { inject, observer } from 'mobx-react'
 import { Match, Link } from 'react-router-dom'
 
 
-@inject('store') @DataW @observer
+@inject('store')  @observer
 export default class SubPage extends Component {
 	constructor(props) {
 		super(props)
