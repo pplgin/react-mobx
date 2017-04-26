@@ -29,6 +29,9 @@ class AppState {
 
   @action clearItems() {
     this.items = []
+  }
+
+  @action clearItem() {
     this.item = {}
   }
 

@@ -7,10 +7,7 @@ import AppState from './stores/AppState'
 
 const appState = new AppState();
 
-ReactDOM.render(
-  <AppContainer>
-    <App store={appState} />
-  </AppContainer>,
+ReactDOM.render(<App store={appState} />,
   document.getElementById('root')
 );
 
@@ -18,9 +15,7 @@ ReactDOM.render(
 if (module.hot) {
   module.hot.accept('./components/App', () => {
     ReactDOM.render(
-      <AppContainer>
         <App store={appState} />
-      </AppContainer>
       ,
       document.getElementById('root')
     );
